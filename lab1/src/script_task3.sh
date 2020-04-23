@@ -9,4 +9,3 @@ echo
 echo "Содержимое PATH:"
 echo $PATH
 echo
-Добавление скрина к заданию 3
