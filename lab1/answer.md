@@ -167,6 +167,10 @@
 
 * С помощью `bash` и `dev/random` создайте файл `numbers.txt` из 150 рандомных чисел.
 
+![numbers](pics/numbers_task4.png)
+
 * "Скормите" скрипту `average.sh` значения из файла `numbers.txt`.
 
-Добавление скринов к номерам
+>>При вызове скрипта `script_random.sh` запускается `average.sh` и ему "скармливается" `numbers.txt`
+
+![randaver](pics/randaver_task4.png)
