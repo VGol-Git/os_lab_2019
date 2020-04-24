@@ -1,10 +1,11 @@
 #!/bin/bash
 
-for i in $@
+while read i
 do
 sum=$[$sum + $i]
+count=$[$count + 1]
 done
-sum=$[$sum / $#]
+sum=$[$sum / $count]
 
 echo "arithmetic mean = $sum"
-echo "count = $#"
+echo "count = $count"
