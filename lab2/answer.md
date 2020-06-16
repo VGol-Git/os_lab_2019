@@ -11,7 +11,7 @@
 ### Задание
 В папке swap лежит 3 файла: swap.c, swap.h и main.c. Ваша задача закончить метод Swap в swap.c, так, чтобы он менял местами два символа. Скомпилировать программу. Если вы все сделали верно, то программа, которую вы собрали выведет "b a".
 
-![swap_task1](pics/swap_task1)
+![swap_task1](pics/swap_task1.png)
 
 ## Задание 2
 
@@ -73,8 +73,8 @@
 
 ***Получится две программы, первая будет использовать статическую билиотеку, а вторая динамическую.*** 
 
-![dynamiclib](pics/dynamiclib_task3.png)
-![statelib](pics/stateliblib_task3.png)
+![dynamiclib](pics/dynamyclib_task3.png)
+![statelib](pics/statelib_task3.png)
 
 
 ## Задание 4
