@@ -9,14 +9,14 @@ pthread_mutex_t mut1 = PTHREAD_MUTEX_INITIALIZER;
 pthread_mutex_t mut2 = PTHREAD_MUTEX_INITIALIZER;
 
 void todo1(){
-  pthread_mutex_lock(&mut1); //блокируем mut1 и спим 1 секунду
+  pthread_mutex_lock(&mut1); //блокируем mut1 
   sleep(1);
   pthread_mutex_lock(&mut2); //блокируем mut2 
   pthread_mutex_unlock(&mut1);
   pthread_mutex_unlock(&mut2);
 }
 void todo2(){
-  pthread_mutex_lock(&mut2);//блокируем mut2 и спим 1 секунду
+  pthread_mutex_lock(&mut2);//блокируем mut2
   sleep(1);
   pthread_mutex_lock(&mut1);//блокируем mut1
   pthread_mutex_unlock(&mut2);

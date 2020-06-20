@@ -131,13 +131,13 @@ void PartFact(struct BegEnd* arg){
   } else 
   {
     for (int i = parm.begin; i <= parm.end; ++i){
-      //printf("%d\n", (i % parm.mod));
+  
       parm.res *= (i % parm.mod);
     }
 
   }
   *arg = parm;
-  //printf("Res = %d\n----\n",parm.res);
+
   pthread_mutex_unlock(&mut);
 }
 
