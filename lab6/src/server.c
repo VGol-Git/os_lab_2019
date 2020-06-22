@@ -19,7 +19,8 @@ pthread_mutex_t mut = PTHREAD_MUTEX_INITIALIZER;
 uint64_t Factorial(const struct FactorialArgs *args) {
   pthread_mutex_lock(&mut);
   uint64_t ans = 1;
-  for (uint64_t i = args->begin; i <= args->end; ++i)
+  uint64_t i;
+  for (i = args->begin; i <= args->end; ++i)
   {
     ans = ans * i % args->mod;
   }
@@ -153,7 +154,8 @@ int main(int argc, char **argv) {
 
       struct FactorialArgs args[tnum];
       uint64_t step = (end - begin) / tnum;
-      for (uint32_t i = 0; i < tnum; i++) {
+      uint32_t i;
+      for (i = 0; i < tnum; i++) {
         args[i].begin = begin + step * i + 1;
         if (i == tnum - 1)
         {
@@ -173,7 +175,7 @@ int main(int argc, char **argv) {
       }
 
       uint64_t total = 1;
-      for (uint32_t i = 0; i < tnum; i++) {
+      for (i = 0; i < tnum; i++) {
         uint64_t result = 0;
         pthread_join(threads[i], (void **)&result);
         total = MultModulo(total, result, mod);
